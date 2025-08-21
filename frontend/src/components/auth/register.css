@@ -1,0 +1,104 @@
+.register-card {
+  max-width: 420px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.password-strength {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.strength-bar {
+  flex: 1;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.strength-fill {
+  height: 100%;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.strength-label {
+  font-size: 11px;
+  font-weight: 500;
+  min-width: 70px;
+  text-align: right;
+}
+
+.form-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 6px 0;
+}
+
+.checkbox-container.error {
+  color: #ff6b6b;
+}
+
+.checkbox-container.error .checkmark {
+  border-color: #ff6b6b;
+}
+
+.terms-link {
+  background: none;
+  border: none;
+  color: #ffd700;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: inherit;
+  padding: 0;
+  margin: 0;
+  transition: color 0.2s ease;
+}
+
+.terms-link:hover {
+  color: #ffa500;
+}
+
+.newsletter-text {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.newsletter-icon-svg {
+  width: 12px;
+  height: 12px;
+  color: #ffd700;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .register-card {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 480px) {
+  .checkbox-container {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .newsletter-text {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
